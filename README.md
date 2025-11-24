@@ -8,7 +8,7 @@
 
 Physicians frequently confront time-sensitive decisions under uncertain conditions, necessitating reliable tools for forecasting clinical outcomes. Although clinical predictive models have the potential to assist in these critical decisions, their widespread adoption is hindered by complexities in data handling, model development, and integration into clinical workflows. This study introduces a pioneering framework leveraging structured electronic health record (EHR) data to develop and deploy clinical large language models (LLMs) that act as versatile predictive engines with minimal barriers to implementation. Employing the advanced LLaMA architecture, consisting of 7 billion parameters, our model was pre-trained on a comprehensive corpus and subsequently fine-tuned and tested on a dataset of 42,160 patients within Johns Hopkins Health System, addressing a spectrum of clinical and operational prediction tasks. We validated our model across three diverse external health systems and four key prediction tasks involving 1,329 patients, including 30-day all-cause readmissions, 90-day all-cause mortality, 30-day intensive care unit (ICU) admissions, and treatment recommendations. The proposed LLM framework achieved a mean area under the receiver operating characteristic curve (ROC-AUC) of 0.84, yielding a significant 0.28 advancement over zero-shot baseline LLMs. These findings underscore the promise of LLMs as unified, user-friendly clinical prediction systems, adept at reasoning across diverse data sources to enhance decision-making at the point of care.
 
-![framework](framework.png)
+![framework](LLM_Overview.png)
 
 We support the following datasets:
 
@@ -211,6 +211,7 @@ If you find our paper or code useful, we will greatly appreacite it if you could
       journal = {arXiv preprint arXiv: 2411.06469}
     }
 ```
+
 
 
 
