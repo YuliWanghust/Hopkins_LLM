@@ -10,18 +10,18 @@ Physicians frequently confront time-sensitive decisions under uncertain conditio
 
 ![framework](LLM_Overview.png)
 
-We support the following datasets:
+Our Hopkins-LLM are developed through the Internal dataset from Johns Hopkins Hospital. But, our pipeline also supports the following datasets:
 
-- [x] [MIMIC-III](https://physionet.org/content/mimiciii/1.4/)
 - [x] [MIMIC-IV](https://physionet.org/content/mimiciv/3.0/)
 
 We provide three common tasks for clinical prediction:
 
 | Task      | Type        |Details |
 | :-------: | ----------- | :---------: |
-| Length-of-Stay Prediction		    |    Triple classification    | Predict the length of hospitalization for this visit by answering 1 if less than one week, 2 if 1 to 2 weeks, and 3 if greater than two weeks. |
 | Mortality Prediction		 |    Binary Classification     |    Predict whether this visit patient will die, answer 1 if yes, otherwise 0 |
-| Readmission Prediction		 |    Binary Classification     |    Predict whether the patient will be readmitted to the hospital within two weeks after this visit, answer 1 if yes, otherwise 0 |
+| Readmission Prediction		 |    Binary Classification     |    Predict whether the patient will be readmitted to the hospital within 30 days after this visit, answer 1 if yes, otherwise 0 |
+| ICU admission Prediction		 |    Binary Classification     |    Predict whether the patient will be readmitted to ICU within 30 days after this visit, answer 1 if yes, otherwise 0 |
+| Treatment Prediction		 |    Binary Classification     |    Predict whether the patient will undergo treated cholecystectomy after this visit, answer 1 if yes, otherwise 0 |
 
 ## Environment Setup
 
@@ -211,6 +211,7 @@ If you find our paper or code useful, we will greatly appreacite it if you could
       journal = {arXiv preprint arXiv: 2411.06469}
     }
 ```
+
 
 
 
