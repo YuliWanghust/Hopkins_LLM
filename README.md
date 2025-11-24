@@ -1,14 +1,13 @@
-# ClinicalBench: Can LLMs Beat Traditional ML Models in Clinical Prediction?
+# Integrating Large Language Models for Enhanced Predictive Analytics in Healthcare
 
 - **TLDR** : We discover that both general-purpose and medical LLMs, even with different model scales, diverse prompting or fine-tuning strategies, <b>still cannot beat traditional ML models in clinical prediction yet</b>, shedding light on their <b><i>potential deficiency in clinical reasoning and decision-making</i></b>.
 - **Authors** : <a href="https://canyuchen.com">Canyu Chen</a>\*, Jian Yu\*,  <a href="https://shanchen.dev/">Shan Chen</a>, <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=HED_458AAAAJ&sortby=pubdate">Che Liu</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&user=EVj1cNoAAAAJ&view_op=list_works">Zhongwei Wan</a>, <a href="https://www.bittermanlab.org/">Danielle S. Bitterman</a>, <a href="https://wcm-wanglab.github.io/">Fei Wang</a>, <a href="https://www.cs.emory.edu/~kshu5/">Kai Shu</a> (*equal contributions)
-- **Paper** : [Read our paper](https://arxiv.org/abs/2411.06469)
-- **Project Website**: [https://clinicalbench.github.io](https://clinicalbench.github.io)
+- **Paper** : [Read our paper]()
 
 
 ## Abstract
 
-Large Language Models (LLMs) hold great promise to revolutionize current clinical systems for their superior capacities on medical text processing tasks and medical licensing exams. Meanwhile, traditional ML models such as SVM and XGBoost have still been mainly adopted in clinical prediction tasks. An emerging question is Can LLMs beat traditional ML models in clinical prediction? Thus, we build a new benchmark ClinicalBench to comprehensively study the clinical predictive modeling capacities of both general-purpose and medical LLMs, and compare them with traditional ML models. ClinicalBench embraces three common clinical prediction tasks, two databases, 14 general-purpose LLMs, 8 medical LLMs, and 11 traditional ML models. Through extensive empirical investigation, we discover that both general-purpose and medical LLMs, even with different model scales, diverse prompting or fine-tuning strategies, still cannot beat traditional ML models in clinical prediction yet, shedding light on their potential deficiency in clinical reasoning and decision-making. We call for caution when practitioners adopt LLMs in clinical applications. ClinicalBench can be utilized to bridge the gap between LLMs' development for healthcare and real-world clinical practice.
+Physicians frequently confront time-sensitive decisions under uncertain conditions, necessitating reliable tools for forecasting clinical outcomes. Although clinical predictive models have the potential to assist in these critical decisions, their widespread adoption is hindered by complexities in data handling, model development, and integration into clinical workflows. This study introduces a pioneering framework leveraging structured electronic health record (EHR) data to develop and deploy clinical large language models (LLMs) that act as versatile predictive engines with minimal barriers to implementation. Employing the advanced LLaMA architecture, consisting of 7 billion parameters, our model was pre-trained on a comprehensive corpus and subsequently fine-tuned and tested on a dataset of 42,160 patients within Johns Hopkins Health System, addressing a spectrum of clinical and operational prediction tasks. We validated our model across three diverse external health systems and four key prediction tasks involving 1,329 patients, including 30-day all-cause readmissions, 90-day all-cause mortality, 30-day intensive care unit (ICU) admissions, and treatment recommendations. The proposed LLM framework achieved a mean area under the receiver operating characteristic curve (ROC-AUC) of 0.84, yielding a significant 0.28 advancement over zero-shot baseline LLMs. These findings underscore the promise of LLMs as unified, user-friendly clinical prediction systems, adept at reasoning across diverse data sources to enhance decision-making at the point of care.
 
 ![framework](framework.png)
 
@@ -213,4 +212,5 @@ If you find our paper or code useful, we will greatly appreacite it if you could
       journal = {arXiv preprint arXiv: 2411.06469}
     }
 ```
+
 
