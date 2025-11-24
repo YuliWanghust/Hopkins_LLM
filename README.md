@@ -77,7 +77,7 @@ Hopkins-LLM_release/
 
 ## Data preparation
 
-* Download [MIMIC-III](https://physionet.org/content/mimiciii/1.4/) and [MIMIC-IV](https://physionet.org/content/mimiciv/3.0/) datasets through [PhysioNet](https://physionet.org/).
+* The multimodal imaging and EHR datasets used in this study were derived from the Johns Hopkins Health System under Institutional Review Board (IRB) approval and contain protected health information. Due to patient privacy considerations, the raw data cannot be publicly shared. De-identified subsets of the data may be made available upon reasonable request to the corresponding author, subject to completion of a Data Use Agreement (DUA) and approval by the Johns Hopkins IRB.
 
 * Open `process_data.sh`, change the path of datasets to yours.
 
@@ -186,6 +186,7 @@ If you find our paper or code useful, we will greatly appreacite it if you could
 ```
 
 ```
+
 
 
 
