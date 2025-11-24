@@ -164,32 +164,12 @@ python calculate.py \
 
 If the task is length_pred, the code will use f1-macro automatically.
 
-For a more detailed description of how to reproduce the results in the paper, please refer to the [result_reproduction.md](result_reproduction.md)
-
 ### Supported Models
 
-[Llama3-8B]( https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)
-[Llama3-70B](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct)
-[Mistral-v0.3-7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
+[Llama3-8B](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)
 [Gemma2-9B](https://huggingface.co/google/gemma-2-9b-it)
-[Qwen2-0.5B](https://huggingface.co/Qwen/Qwen2-0.5B-Instruct)
-[Qwen2-1.5B](https://huggingface.co/Qwen/Qwen2-1.5B-Instruct)
-[Qwen2-7B](https://huggingface.co/Qwen/Qwen2-7B-Instruct)
-[Yi-v1.5-6B](https://huggingface.co/01-ai/Yi-1.5-6B-Chat)
-[Yi-v1.5-9B](https://huggingface.co/01-ai/Yi-1.5-9B-Chat)
-[Yi-v1.5-34B](https://huggingface.co/01-ai/Yi-1.5-34B-Chat)
-[Vicuna-v1.5-7B](https://huggingface.co/lmsys/vicuna-7b-v1.5)
-[Phi3.5-mini-3.8B](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
-[InternLM2.5-7B](https://huggingface.co/internlm/internlm2_5-7b-chat)
-[MiniCPM3-4B](https://huggingface.co/openbmb/MiniCPM3-4B)
-[Meditron-7B](https://huggingface.co/epfl-llm/meditron-7b)
-[Meditron-70B](https://huggingface.co/epfl-llm/meditron-70b)
-[Medllama3-8B](https://huggingface.co/ProbeMedicalYonseiMAILab/medllama3-v20)
-[BioMistral-7B](https://huggingface.co/BioMistral/BioMistral-7B)
-[Med42-8B](https://huggingface.co/m42-health/Llama3-Med42-8B)
-[Med42-70B](https://huggingface.co/m42-health/Llama3-Med42-70B)
-[BioMedGPT-7B](https://huggingface.co/PharMolix/BioMedGPT-LM-7B)
-[Internist-7B](https://huggingface.co/internistai/base-7b-v0.2)
+[DeepSeek-R1]((https://ollama.com/library/deepseek-r1:14b))
+[ChatGPT-4]([](https://chatgpt.com/))
 
 ……
 
@@ -206,6 +186,7 @@ If you find our paper or code useful, we will greatly appreacite it if you could
 ```
 
 ```
+
 
 
 
