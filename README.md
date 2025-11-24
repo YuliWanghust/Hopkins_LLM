@@ -28,16 +28,16 @@ We provide three common tasks for clinical prediction:
 Clone the repository
 
 ```shell
-git clone https://github.com/canyuchen/ClinicalBench.git
-cd ClinicalBench
+git clone https://github.com/canyuchen/Hopkins-LLM.git
+cd Hopkins-LLM
 ```
 
 
 Download the environment
 
 ```shell
-conda create -n clibench python=3.8
-conda activate clibench
+conda create -n hopkins_llm python=3.8
+conda activate hopkins_llm
 pip install .
 cd src
 ```
@@ -45,7 +45,7 @@ cd src
 The structure of the important files:
 
 ```shell
-llm4clinical_prediction_release/
+Hopkins-LLM_release/
 └── src/
     ├── process_data.sh
     ├── test.py
@@ -54,24 +54,24 @@ llm4clinical_prediction_release/
     ├── calculate.py
     ├── data/
     │   ├── length_pred/
-    │   │   ├── mimic3/
-    │   │   └── mimic4/
+    │   │   ├── CTPA/
+    │   │   └── CCTA/
     │   ├── mortality_pred/
-    │   │   ├── mimic3/
-    │   │   └── mimic4/
+    │   │   ├── CTPA/
+    │   │   └── CCTA/
     │   └── readmission_pred/
-    │       ├── mimic3/
-    │       └── mimic4/
+    │       ├── CTPA/
+    │       └── CCTA/
     └── results/
         ├── length_pred/
-        │   ├── mimic3/
-        │   └── mimic4/
+        │   ├── CTPA/
+        │   └── CCTA/
         ├── mortality_pred/
-        │   ├── mimic3/
-        │   └── mimic4/
+        │   ├── CTPA/
+        │   └── CCTA/
         └── readmission_pred/
-            ├── mimic3/
-            └── mimic4/
+            ├── CTPA/
+            └── CCTA/
 
 ```
 
@@ -107,7 +107,7 @@ Test on a specific Model, Dataset, Task, Mode, Temperature, and Split Index:
 ```shell
 python test.py \
 	--base_model meta-llama/Meta-Llama-3-8B-Instruct \ 
-	--dataset mimic3 \
+	--dataset CTPA \
 	--task length_pred \
 	--mode ORI \
 	--temperature 0 \
@@ -116,7 +116,7 @@ python test.py \
 
 `base_model`: The model we test. Use the name in huggingface like `meta-llama/Meta-Llama-3-8B-Instruct`, `google/gemma-2-9b-it`.
 
-`dataset`: The dataset we use. Currently, `mimic3` and `mimic4` are available.
+`dataset`: The dataset we use. Currently, `CTPA` and `CCTA` are available.
 
 `task`: Choose from `length_pred`, `mortality_pred`, `readmission_pred`.
 
@@ -131,7 +131,7 @@ Instead of using a generate method, interact with the model directly and preserv
 ```shell
 python test_withprob.py \
 	--base_model meta-llama/Meta-Llama-3-8B-Instruct \ 
-	--dataset mimic3 \
+	--dataset CTPA \
 	--task length_pred \
 	--mode ORI \
 	--random_index 0
@@ -142,7 +142,7 @@ Use traditional models to predict:
 ```shell
 python tradition.py \
 	--task mortality_pred \
-	--dataset mimic4\
+	--dataset CCTA\
 	--random_index 6
 ```
 
@@ -155,7 +155,7 @@ Calculate the F1 metrics:
 ```shell
 python calculate.py \
 	--base_model meta-llama/Meta-Llama-3-8B-Instruct \
-	--dataset mimic3 \
+	--dataset CTPA \
 	--task length_pred \
 	--mode ORI \
 	--temperature 0 \
@@ -204,13 +204,9 @@ This source code is released under the MIT license. We do not own any of the dat
 ## Citation
 If you find our paper or code useful, we will greatly appreacite it if you could consider citing our paper:
 ```
-@article{chen2024clinicalbench,
-      title   = {ClinicalBench: Can LLMs Beat Traditional ML Models in Clinical Prediction?},
-      author  = {Canyu Chen and Jian Yu and Shan Chen and Che Liu and Zhongwei Wan and Danielle Bitterman and Fei Wang and Kai Shu},
-      year    = {2024},
-      journal = {arXiv preprint arXiv: 2411.06469}
-    }
+
 ```
+
 
 
 
