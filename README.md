@@ -1,7 +1,7 @@
 # Integrating Large Language Models for Enhanced Predictive Analytics in Healthcare
 
 - **Authors**: Yuli Wang*, Yuwei Dai*, Robin Wang, Tej Mehta, Premal Trivedi, Thao Vu, Cheng Ting Lin, Li Yang, Zhicheng Jiao, Ihab Kamel, Jing Wu, and Harrison Bai (*equal contributions)
-- **Paper** : [Read our paper]()
+- **Paper** : [Read our paper](https://www.nature.com/articles/s41746-026-02572-y)
 
 
 ## Abstract
